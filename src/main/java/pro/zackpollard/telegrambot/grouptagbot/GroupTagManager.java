@@ -37,6 +37,7 @@ public class GroupTagManager {
 
     private void initData() {
 
+        System.out.println("A");
         if (tagLocation.exists()) {
 
             groupTags = loadTags();
@@ -52,6 +53,7 @@ public class GroupTagManager {
 
             this.saveTags();
         }
+        System.out.println("B");
 
         if(usernameCacheLocation.exists()) {
 
@@ -68,12 +70,14 @@ public class GroupTagManager {
 
             this.saveUsernameCache();
         }
+        System.out.println("C");
 
         if (groupTags == null || usernameCache == null) {
 
             System.err.println("The save file could not be loaded. Either fix the save file or delete it and restart the bot.");
             System.exit(1);
         }
+        System.out.println("D");
     }
 
     private GroupTags loadTags() {
