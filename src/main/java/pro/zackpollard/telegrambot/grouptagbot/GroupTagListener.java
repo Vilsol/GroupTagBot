@@ -27,6 +27,7 @@ public class GroupTagListener implements Listener {
 
     @Override
     public void onMessageReceived(MessageReceivedEvent event) {
+        System.out.println(event);
 
         User sender = event.getMessage().getSender();
 
@@ -41,6 +42,7 @@ public class GroupTagListener implements Listener {
 
     @Override
     public void onMessageEditReceived(MessageEditReceivedEvent event) {
+        System.out.println(event);
 
         User sender = event.getMessage().getSender();
 
@@ -52,6 +54,7 @@ public class GroupTagListener implements Listener {
 
     @Override
     public void onParticipantJoinGroupChat(ParticipantJoinGroupChatEvent event) {
+        System.out.println(event);
 
         User joiner = event.getParticipant();
 
