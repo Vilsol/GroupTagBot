@@ -35,6 +35,7 @@ public class GroupTagBot {
     }
 
     public GroupTagBot() {
+        System.out.println("1");
 
         instance = this;
 
@@ -42,14 +43,18 @@ public class GroupTagBot {
         telegramBot = TelegramBot.login(API_KEY);
         //This registers the SpoilerListener Listener to this bot.
 
+        System.out.println("2");
         manager = new GroupTagManager();
 
+        System.out.println("3");
         telegramBot.getEventsManager().register(listener = new GroupTagListener());
         //This method starts the retrieval of updates.
         //The boolean it accepts is to specify whether to retrieve messages
         //which were sent before the bot was started but after the bot was last turned off.
+        System.out.println("4");
         telegramBot.startUpdates(false);
 
+        System.out.println("5");
         Scanner scanner = new Scanner(System.in);
 
         boolean running = true;
