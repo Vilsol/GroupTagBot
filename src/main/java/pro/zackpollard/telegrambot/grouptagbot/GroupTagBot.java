@@ -57,9 +57,12 @@ public class GroupTagBot {
         System.out.println("5");
         Scanner scanner = new Scanner(System.in);
 
+        System.out.println("6");
         boolean running = true;
+        System.out.println("7");
 
         while(running) {
+        System.out.println("8");
 
             System.out.print("root@GroupTagBot$ ");
             String input = scanner.nextLine().trim();
