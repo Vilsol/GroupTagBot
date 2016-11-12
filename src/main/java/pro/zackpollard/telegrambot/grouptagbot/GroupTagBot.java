@@ -62,7 +62,12 @@ public class GroupTagBot {
         System.out.println("7");
 
         while(running) {
-        System.out.println("8");
+            System.out.println("8");
+
+            System.out.print("I");
+            System.out.println("Give");
+            System.out.print("Up");
+            System.out.println("!");
 
             System.out.print("root@GroupTagBot$ ");
             String input = scanner.nextLine().trim();
